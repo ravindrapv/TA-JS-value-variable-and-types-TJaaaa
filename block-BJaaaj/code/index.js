@@ -41,6 +41,7 @@ var wiseMan = "Tyrion Lannister";
 // Follow instructions and do the following. In case of an error write the error in comment
 
 // Reassign the value of `wiseMan` to "Samwell Tarly"
+let wiseMan = "samwell Tarly"
 // Declare a variable `userName` with value "Lysa Arryn"
 // Declare a variable named `oddNumber` and assign a value `57`.
 // Reassign the value of `oddNumber` to 61
