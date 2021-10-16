@@ -6,23 +6,20 @@ let lastName = "Stark";
 // Do the following:
 
 // Alert the value of the firstName.
-let firstName = "john"
+alert(firstName)
 // Alert the value of the lastName.
-let lastName = "snow"
+alert(lastName)
 // Assign a new value of `"John"` to firstName.
-let john = "20"
+let firstName = "john"
 // Assign a new value of `"Snow"` to lastName.
-let snow = "23"
+let lastName = "snow"
 // Alert the new value of `firstName` and `lastName` by concatenating them
-let firstName = 21
-let lastName = 24
+alert(firstName,lastName)
 // Create a new varaible using `const` named `fullName` and assign the fullname using firstName and lastName seperated by space.
-let const = "john" + "snow"
+const fullName = firstName
 
 // Declare three variables `name,` `newUser` and `isAdmin`.
-let name = "ravindra"
-let newUser = "venkat"
-let isAdmin = "ravindrapv"
+let name = "name,newUser,isAdmin"
 // Assign your name as the value of `name`.
 let name = "venkataravindra"
 // Assign the value of `name` to `newUser`.
@@ -30,9 +27,7 @@ let venkataravindra = "newUser"
 // Set the value of `isAdmin` to `true`.
 let isAdmin = true
 // Alert the values of all the three variables.
-let name = "20"
-let newUser = "21"
-let isAdmin = "22"
+alert(fullName,lastName,firstName)
 
 // Assignment and re-assignment
 
@@ -43,6 +38,7 @@ var wiseMan = "Tyrion Lannister";
 // Reassign the value of `wiseMan` to "Samwell Tarly"
 let wiseMan = "samwell Tarly"
 // Declare a variable `userName` with value "Lysa Arryn"
+let userName = "Lysa Rrryn"
 // Declare a variable named `oddNumber` and assign a value `57`.
 // Reassign the value of `oddNumber` to 61
 
