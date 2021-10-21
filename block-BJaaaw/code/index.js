@@ -6,11 +6,24 @@
   - `if` the number is even print the message " number is even"
   - `if` the number is odd print the message "number is odd"
 */
-
+let num = +prompt("enter a number");
+if (num%2==0) {
+  alert("this is an even number");
+}else{
+  alert("this is a odd number");
+}
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
+let numA = prompt("enter a number");
+let numB = prompt("enter another number");
+if (numA>numB) {
+  alert("numA is max");
+}
+else{
+  alert("numB is max")
+}
 
 // 3. Convert the above code using`?` terniary operator
-
+numA>numB ?  alert("numA is max") : alert("numB is max");
 /*
 4. Write a program that asks the user for the house name and check the following conditions:
 
@@ -18,20 +31,39 @@
   - `if` house name is "lannister" then print the message " A lannister always pays his debt"
   - `else` print the message " All men must die"
 */
+let houseName = prompt("enter the house name");
+if (houseName == stark) {
+  alert("winter is coming");
+}
+else {
+  alert("All men must die");
+}
 
 // 5. Convert the above code using`?` terniary operator
+
 
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
-
+function numberOfDays(month){
+  return new Date(2021, month, 0).getDate();
+}
+console.log(numberOfDays(1));
 /* 7.
-- Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amoun from salery.Conditions are given below.
+- Write a program that take the salery of the user using prompt and alert 
+the in -hand amount.You will find out the in 
+-hand amount by deducting the tax amoun from salery.Conditions are given below.
   - `Salary <= 20000` tax is 10 %
   - `Salary <= 40000` tax is 20 %
   - `Salary > 50000` tax is 30 %
 
 */
+let salery = prompt("enter your salery");
+if (salary <= 20000 tax is 10 %) {
+  alert("in -hand amount.You will find out");
+}if (- `Salary <= 40000` tax is 20 %) {
+  alert("-hand amount by deducting the tax amoun from salery");
+}
 
 //  if..else vs switch
 
