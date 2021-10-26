@@ -16,7 +16,7 @@ if (age >= 12 && age <= 55) {
 } else {
   if (age >= 4 && age <= 11) {
     alert("You are too young to participate in the marathon");
-  } else{
+  } else {
     if (age <= 4) {
       alert("Hey Kiddo! Can You Walk ?");
     }
@@ -39,9 +39,9 @@ n = 7 => output: heeeeeeello
 // [Your code goes here]
 let num = +prompt("Enter any number");
 let middle = '';
-for ( let i = 0 ; i <= num ; i++ ){
-   middle = middle + i ;
-   console.log(`h${middle}ello`);
+for (let i = 0; i <= num; i++) {
+  middle = middle + i;
+  console.log(`h${middle}ello`);
 }
 
 /*
@@ -50,10 +50,10 @@ Program to calculate the sum of first n natural numbers(1,2,3...n are known as n
 */
 // [Your code goes here]
 let numbers = +prompt("Enter a number");
-let sum = '';
-for ( let j = 0 ; j <= numbers ; j++ ){
-  numbers = sum + j;
-  +alert(sum);
+let sum = 0;
+for (let j = 1; j <= numbers; j++) {
+  sum += j;
+  alert(`the value os sum is${sum}`);
 }
 
 /* Switch Statement
@@ -74,34 +74,34 @@ Take a number value from user and alert the message if it matches the conditions
 
 */
 // [Your code goes here]
-let number = prompt("enter the number");
+let number = +prompt("enter the number 1to9");
 switch (number) {
-  case number == 1:
-    alert(`ONE ${number} is equal to 1`);
+  case 1:
+    alert(`ONE`);
     break;
-    case number == 2:
-    alert(`TWO number is equal to 2`);
+  case 2:
+    alert(`TWO`);
     break;
-    case number == 3:
-    alert(`THREE number is equal to 3`);
+  case 3:
+    alert(`THREE`);
     break;
-    case number == 4:
-    alert(`FOUR number is equal to 4`);
+  case 4:
+    alert(`FOUR`);
     break;
-    case number == 5:
-    alert(`FIVE number is equal to 5`);
+  case 5:
+    alert(`FIVE`);
     break;
-    case number == 6:
-    alert(`SIX number is equal to 6`);
+  case 6:
+    alert(`SIX`);
     break;
-    case number == 7:
-    alert(`SEVEN number is equal to 7`);
+  case 7:
+    alert(`SEVEN`);
     break;
-    case number == 8:
-    alert(`EIGHT number is equal to 8`);
+  case 8:
+    alert(`EIGHT`);
     break;
-    case number == 9:
-    alert(`NINE number is equal to 9`);
+  case 9:
+    alert(`NINE`);
     break;
   default:
     alert("enter the valid input");
@@ -123,30 +123,30 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 
 // [Your code goes here]
 let marks = prompt("enter youer marks");
-switch (marks) {
-  case marks >= 90 && marks <= 90:
+switch (true) {
+  case marks > 90:
     alert("AA");
     break;
-    case marks >= 80 && marks <= 70:
-      alert("AB");
-      break;
-      case marks >= 70 && marks <= 60:
+  case marks > 80 && marks < 70:
+    alert("AB");
+    break;
+  case marks > 70 && marks < 60:
     alert("BB");
     break;
-    case marks >= 60 && marks <= 50:
+  case marks > 60 && marks < 50:
     alert("BC");
     break;
-    case marks >= 50 && marks <= 40:
+  case marks > 50 && marks < 40:
     alert("CC");
     break;
-    case marks >= 40 && marks <= 30:
+  case marks > 40 && marks < 30:
     alert("CD");
     break;
-    case marks >= 30 && marks <= 20:
-    alert("E");
+  case marks > 30:
+    alert("EE");
     break;
-    case marks >= 20:
-    alert("F");
+  case marks < 30:
+    alert("FF");
     break;
   default:
     alert("enter a valid marks");
@@ -161,25 +161,21 @@ let num1 = prompt("enter a integer value");
 let num2 = prompt("enter the second integer value");
 if (num1 > num2) {
   alert(`${num1} is greater`);
-}else{
+} else {
   alert(`${num2} is greater`);
 }
 /*
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 */
 // [Your code goes here]
-let a = +prompt(`enter the number`);
-let b = +prompt(`enter another number`);
+let a = +prompt(`enter 1st number`);
+let b = +prompt(`enter 2nd number`);
 let c = +prompt(`enter 3rd number`);
-console.log(a);
-console.log(b);
-console.log(c);
-if (a>b) {
-  alert("+");
-}else {
-  if (b>c) {
-    alert("-");
-  }
+let product = a*b*c;
+if (product > 0) {
+  alert("the value is +");
+} else {
+ alert("the value is -")
 }
 
 /* Calculator
@@ -195,12 +191,21 @@ if (a>b) {
 */
 let numa = +prompt("enter a number");
 let numb = +prompt("enter another number");
-switch (true) {
-  case numa+numb:
-    alert(`${numa+numb}`)
+let operation = prompt("enter the operation (Add, Sub, Mul, Div)");
+switch (operation) {
+  case "Add":
+    alert(`the sum of${numa}and${numb} is${numa + numb}`);
+    break;
+    case "Sub":
+    alert(`the sub of${numa}and${numb} is${numa - numb}`);
+    break;
+    case "Mul":
+    alert(`the mul of${numa}and${numb} is${numa * numb}`);
+    break;
+    case "Div":
+    alert(`the div of${numa}and${numb} is${numa / numb}`);
     break;
 
   default:
-    alert("enter a valid input");
     break;
 }
